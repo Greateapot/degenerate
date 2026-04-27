@@ -16,7 +16,11 @@ environment:
   sdk: ^3.8.0
 
 dependencies:
-  degenerate_runtime: ^0.4.0
+  degenerate_runtime:
+    git:
+      url: https://github.com/Greateapot/degenerate.git
+      ref: bugfix/typed-oneof
+      path: packages/degenerate_runtime
   dio: ^5.0.0
 
 dev_dependencies:
