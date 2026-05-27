@@ -77,7 +77,11 @@ final class OneOf2<A, B> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf2($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf2($value)';
+  }
 }
 
 
@@ -151,7 +155,11 @@ final class OneOf3<A, B, C> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf3($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf3($value)';
+  }
 }
 
 // ─── OneOf4 ──────────────────────────────────────────────────────
@@ -234,7 +242,11 @@ final class OneOf4<A, B, C, D> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf4($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf4($value)';
+  }
 }
 
 // ─── OneOf5 ──────────────────────────────────────────────────────
@@ -327,7 +339,11 @@ final class OneOf5<A, B, C, D, E> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf5($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf5($value)';
+  }
 }
 
 // ─── OneOf6 ──────────────────────────────────────────────────────
@@ -430,7 +446,11 @@ final class OneOf6<A, B, C, D, E, F> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf6($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf6($value)';
+  }
 }
 
 // ─── OneOf7 ──────────────────────────────────────────────────────
@@ -543,7 +563,11 @@ final class OneOf7<A, B, C, D, E, F, G> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf7($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf7($value)';
+  }
 }
 
 // ─── OneOf8 ──────────────────────────────────────────────────────
@@ -668,7 +692,11 @@ final class OneOf8<A, B, C, D, E, F, G, H> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf8($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf8($value)';
+  }
 }
 
 // ─── OneOf9 ──────────────────────────────────────────────────────
@@ -803,5 +831,9 @@ final class OneOf9<A, B, C, D, E, F, G, H, I> {
   int get hashCode => value.hashCode;
 
   @override
-  String toString() => 'OneOf9($value)';
+  String toString() {
+    final v = value;
+    if (v == null || v is String || v is num || v is bool) return v.toString();
+    return 'OneOf9($value)';
+  }
 }
